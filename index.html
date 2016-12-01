@@ -148,11 +148,21 @@
             <li>Protein Bars</li>
           </ul>
       </section>
-      <section id="bmi">
+      <section id="bmisec">
         <h2>Check your BMI!</h2>
         <p>Body Mass Index (BMI) is an estimated measurement of your body fat that's based on your 
-          height and weight. Try our API below to find out your BMI!
+          height and weight (in metric units). Try our API below to find out your BMI!
         </p>
+      </section>
+      <section id="bmi">
+        <form id="bmi-form" name="bmi-form" method="get" action="#null">
+          <label for="">Type in your weight (kg)</label>
+          <input id="kg" type="text" name="kg" />
+          <label for="">Type in your height (in)</label>
+          <input id="in" type="text" name="in" />
+          <span class="error"></span>
+          <input id="bmi-submit" type="submit" name="bmi-submit" value="Check BMI" />
+        </form>
       </section>
     </main>
   </div>
