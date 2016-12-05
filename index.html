@@ -4,12 +4,7 @@
     <title>A Healthier You</title>
     <meta charset= "utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no"/>
-    <style>
-      img, video{
-        display: block;
-        max-width: 100%;
-      }
-    </style>
+    <link rel="stylesheet" href="css/screen.css" media="screen" />
   </head>	
   <body>
   <div id="page">
@@ -17,82 +12,27 @@
       <h1>It's You, But Healthier</h1>
     </header> 
     <main class="content">
-       <section id="skin">
-        <h2>Better Skin, Better You!</h2>
-          <p>Everyone knows that keeping a clear face is a hard job. However, it doesn't have to be. Keeping a 
-            good and consistent cleansing ritual will help you eliminate unwanted dirt from your skin, make you
-            look fresher and more awake, as well as give you a natural glow. Below I have outlined some simple
-            ways you can help your skin stay clear of acne, blackheads, wrinkles, and black circles under the eye.         
-          </p>
-        <h3>Basic tips for clear skin:</h3>
-          <ul>
-            <li>Always remeber to wash your face after/before going to bed</li>
-            <li>Exfoliating your skin will help get to the tough dirt that hides deep in your pores</li>
-            <li>Remove any sort of makeup before hitting the sac is essential</li>
-            <li>Moisturizing based on our skin type will help your skin look and feel healthy</li>
-            <li>Use any facewahs or moistrurizer that contains salicylic acid or benzoyl peroxide to fight acne</li>
-            <li>Face masks,for both males and females, can help freshen up the skin</li>
-            <li>Try not to touch your face throughout the day, fingers can hold lots of germs that you pass to your skin and can cause acne</li>
-            <li>Avoid picking pimples as it can leave a scar or blemish behind</li>
-            <li>Clean your makeup brushes at least once a week</li>
-            <li>DRINK LOTS OF WATER! Men should be typically drinking 13 cubs of water daily, were as females should aim for nine cups of water</li>
-            <li>Keep a consistent sleeping schedule, aim for 7-8 hours a night</li>
-            <li>Wash your pillowcase and blankets regularly</li>
-            <li>Create an exercise routine combined with a healthy diet</li>
-          </ul>
+    <section id="bmisec">
+        <h2>Check your BMI!</h2>
+        <p>Body Mass Index (BMI) is an estimated measurement of your body fat that's based on your 
+          height and weight (in metric units). Try our API below to find out your BMI!
+        </p>
       </section>
-      <section id="workout">
-        <h2>The Importance Of Being Active</h2>
-          <p>Do you want to have more energy, feel better or even add years to your life? Physical activity or 
-            exercise can improve your health and reduce the risk of developing several diseases like type 2 
-            diabetes, cancer and cardiovascular disease. It can have immediate and long-term health benefits.
-            Most importantly, regular activity can improve your quality of life. People of all ages, shapes, 
-            sizes, and abilities can benefit from being physically active. The more physical activity you do,
-            the greater the health benefits.
-          </p>
-        <h3>Benefits Of Regular Physical Activity</h3>
-          <ul id="benefits">
-            <li>Feel better - more energy &amp; better mood</li>
-            <li>Have a relaxed state of mind</li>
-            <li>Fall asleep faster and deepen your sleep</li>
-            <li>Lower your blood cholesterol levels</li>
-            <li>Lower the risk of osteoporosis, strengthen your bones, joints &amp; muscles</li>
-            <li>Reduce the risk of a heart attack</li>
-            <li>Recover faster from injuries, flues, hospitalization etc.</li>
-            <li>Manage your weight better</li>
-            <li>Lower the risk of some cancers and type 2 diabetes</li>
-          </ul>
-        <h3>Types Of Physical Activity That Are Especially Beneficial:</h3>
-          <ul id="types">
-            <li>Aerobic (cardio) activities - stimulate the heart and breathing rate (heart beats faster, breathe 
-              harder). They can be moderate or vigorous in their intensity. If performed at a level of intensity 
-              that is too high, aerobic activities become anaerobic ("without oxygen"). Anaerobic exercise is activity 
-              that causes you to be quickly out of breath, like sprinting or lifting a heavy weight.
-            </li>
-            <img src="images/sprinting.jpg" alt="portrait" />
-            <img src="images/lift2.jpg" alt="portrait" />
-            <li>Muscle-strengthening activities - make your muscles stronger. It's important to work all the different 
-              parts of the body: your arms, legs, back, chest, stomach, shoulders, hips. These include activities 
-              like push-ups, resistance exercises (<a href="https://s-media-cache-ak0.pinimg.com/736x/1d/75/98/1d7598c89922610b91ccad04fae1166b.jpg">bands</a>, 
-              <a href="https://image.issuu.com/150811125119-753960fe50d206230f3c446804d984e0/jpg/page_1.jpg">weight machines</a>), sit-ups etc.
-            </li>
-            <img src="images/situp.jpg" alt="portrait" />
-            <li>Bone-strengthening activities make your bones stronger. They're especially important for children 
-              and adolescents. They produce a force on the bones that promotes bone growth and strength. Some 
-              bone-strengthening activities include: jumping, running, playing sports.
-            </li>
-            <img src="images/basketball.jpg" alt="portrait" />
-            <img src="images/rope.jpg" alt="portrait" />
+      <section id="bmi">
+        <form id="bmi-form" name="bmi-form" method="get" action="#null">
+          <label for="bmi-weight">Type in your weight (kg):</label>
+          <input type="text" id="bmi-weight" name="bmi-weight" />
+          <label for="bmi-height">Type in your height (cm):</label>
+          <input type="text" id="bmi-height" type="text" name="bmi-height" />
+          <input type="submit" id="bmi-submit" name="bmi-submit" value="Check BMI" />
+        </form>
+        <p id="results"></p>
       </section>
       <section id="food">
         <h2>You Are What You Eat</h2>
-          <p>It is very important for people to eat healthily. It especially becomes important as you age because your metabolism slows down tremendously 
-             around the age of 30. This is why alot of people are most often heavier later in their life, than they were in their teens and 20's. Even though
-             young people tend to have a fast metabolism, how you treat your body in the early years of your life still matters. People who eat healthy, tend to 
-             have longer lives and statistically have fewer health problems. An average woman should be consuming 2,000 calories per day, and the average man 2,500 
-             calories. On an average day, we should be eating some form of breakfast, lunch and dinner (snacks optional) to reach this goal. Read on below to find
-             out what an ideal meal should contain.
-          </p>
+          <p>It is very important for people to eat healthily. It especially becomes important as you age because your metabolism slows down tremendously around the age of 30. This is why alot of people are most often heavier later in their life, than they were in their teens and 20's. Even though young people tend to have a fast metabolism, how you treat your body in the early years of your life still matters.</p>
+          <p>People who eat healthy, tend to have longer lives and statistically have fewer health problems. An average woman should be consuming 2,000 calories per day, and the average man 2,500 calories. On an average day, we should be eating some form of breakfast, lunch and dinner (snacks optional) to reach this goal. Read on below to find
+             out what an ideal meal should contain.</p>
         <h3>The Perfect Meal</h3>
           <ul>
             <li>Protein</li>
@@ -125,7 +65,7 @@
             </li>
           </ul>
         <h3>Minimize Junk</h3>
-        <p>Junk Food Inlcudes:</p>
+        <h4>Junk Food Inlcudes</h4>
           <ul>
             <li>Candy</li>
             <li>Chocolate</li>
@@ -148,21 +88,78 @@
             <li>Protein Bars</li>
           </ul>
       </section>
-      <section id="bmisec">
-        <h2>Check your BMI!</h2>
-        <p>Body Mass Index (BMI) is an estimated measurement of your body fat that's based on your 
-          height and weight (in metric units). Try our API below to find out your BMI!
-        </p>
+      <section id="workout">
+        <h2>The Importance Of Being Active</h2>
+          <p>Do you want to have more energy, feel better or even add years to your life? Physical activity or 
+            exercise can improve your health and reduce the risk of developing several diseases like type 2 
+            diabetes, cancer and cardiovascular disease. It can have immediate and long-term health benefits.
+            Most importantly, regular activity can improve your quality of life. People of all ages, shapes, 
+            sizes, and abilities can benefit from being physically active. The more physical activity you do,
+            the greater the health benefits.
+          </p>
+        <h3>Benefits Of Regular Physical Activity</h3>
+          <ul id="benefits">
+            <li>Feel better - more energy &amp; better mood</li>
+            <li>Have a relaxed state of mind</li>
+            <li>Fall asleep faster and deepen your sleep</li>
+            <li>Lower your blood cholesterol levels</li>
+            <li>Lower the risk of osteoporosis, strengthen your bones, joints &amp; muscles</li>
+            <li>Reduce the risk of a heart attack</li>
+            <li>Recover faster from injuries, flues, hospitalization etc.</li>
+            <li>Manage your weight better</li>
+            <li>Lower the risk of some cancers and type 2 diabetes</li>
+          </ul>
+        <h3>Types Of Physical Activity That Are Especially Beneficial:</h3>
+          <ul id="types">
+            <li>Aerobic (cardio) activities - stimulate the heart and breathing rate (heart beats faster, breathe 
+              harder). They can be moderate or vigorous in their intensity. If performed at a level of intensity 
+              that is too high, aerobic activities become anaerobic ("without oxygen"). Anaerobic exercise is activity 
+              that causes you to be quickly out of breath, like sprinting or lifting a heavy weight.
+            </li>
+            <div class="imgContainer">
+            <img class="img" src="images/sprinting.jpg" alt="portrait" />
+            <img class="img" src="images/lift2.jpg" alt="portrait" />
+            </div>
+            <li>Muscle-strengthening activities - make your muscles stronger. It's important to work all the different 
+              parts of the body: your arms, legs, back, chest, stomach, shoulders, hips. These include activities 
+              like push-ups, resistance exercises (<a href="https://s-media-cache-ak0.pinimg.com/736x/1d/75/98/1d7598c89922610b91ccad04fae1166b.jpg">bands</a>, 
+              <a href="https://image.issuu.com/150811125119-753960fe50d206230f3c446804d984e0/jpg/page_1.jpg">weight machines</a>), sit-ups etc.
+            </li>
+            <div class="imgContainer">
+            <img class="img" src="images/situp.jpg" alt="portrait" />
+            </div>
+            <li>Bone-strengthening activities make your bones stronger. They're especially important for children 
+              and adolescents. They produce a force on the bones that promotes bone growth and strength. Some 
+              bone-strengthening activities include: jumping, running, playing sports.
+            </li>
+            <div class="imgContainer">
+            <img class="img" src="images/basketball.jpg" alt="portrait" />
+            <img class="img" src="images/rope.jpg" alt="portrait" />
+            </div>
       </section>
-      <section id="bmi">
-        <form id="bmi-form" name="bmi-form" method="get" action="#null">
-          <label for="bmi-weight">Type in your weight (kg)</label>
-          <input type="text" id="bmi-weight" name="bmi-weight" />
-          <label for="bmi-height">Type in your height (cm)</label>
-          <input type="text" id="bmi-height" type="text" name="bmi-height" />
-          <input type="submit" id="bmi-submit" name="bmi-submit" value="Check BMI" />
-        </form>
-        <p id="results"></p>
+      <section id="skin">
+        <h2>Better Skin, Better You!</h2>
+          <p>Everyone knows that keeping a clear face is a hard job. However, it doesn't have to be. Keeping a 
+            good and consistent cleansing ritual will help you eliminate unwanted dirt from your skin, make you
+            look fresher and more awake, as well as give you a natural glow. Below I have outlined some simple
+            ways you can help your skin stay clear of acne, blackheads, wrinkles, and black circles under the eye.         
+          </p>
+        <h3>Basic tips for clear skin:</h3>
+          <ul>
+            <li>Always remeber to wash your face after/before going to bed</li>
+            <li>Exfoliating your skin will help get to the tough dirt that hides deep in your pores</li>
+            <li>Remove any sort of makeup before hitting the sac is essential</li>
+            <li>Moisturizing based on our skin type will help your skin look and feel healthy</li>
+            <li>Use any facewahs or moistrurizer that contains salicylic acid or benzoyl peroxide to fight acne</li>
+            <li>Face masks,for both males and females, can help freshen up the skin</li>
+            <li>Try not to touch your face throughout the day, fingers can hold lots of germs that you pass to your skin and can cause acne</li>
+            <li>Avoid picking pimples as it can leave a scar or blemish behind</li>
+            <li>Clean your makeup brushes at least once a week</li>
+            <li>DRINK LOTS OF WATER! Men should be typically drinking 13 cubs of water daily, were as females should aim for nine cups of water</li>
+            <li>Keep a consistent sleeping schedule, aim for 7-8 hours a night</li>
+            <li>Wash your pillowcase and blankets regularly</li>
+            <li>Create an exercise routine combined with a healthy diet</li>
+          </ul>
       </section>
     </main>
   </div>
