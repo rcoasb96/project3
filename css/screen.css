@@ -1,0 +1,91 @@
+html {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 1.125em;  /* ~ 18px */
+  line-height: 1.222em; /* ~ 22px - 1 gridline */
+  letter-spacing: 0.03125em;
+  padding-top: 0;
+  background-color: #2BAE67;
+  color: #2D2C2E;
+}
+img, video {
+  display: block;
+  max-width: 100%;
+}
+header {
+  background: url(../images/header.jpeg) #49311c;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: left;
+}
+header {
+  margin: -0.916em;
+  margin-top: -1.222em;
+  padding-top: 1.222em;
+  padding-bottom: 1.222em;
+}
+h1 {
+  text-align: center;
+  padding: 1.222em;
+  padding-bottom: 0.666em;
+  color: #FFFFFF;
+  font-size: 2.488em;
+  line-height: 1.222em;
+  letter-spacing: 0.0625em;
+}
+h2 {
+  font-size: 2.074em;
+  line-height: 1.222em;
+  letter-spacing: 0.0625em;
+  text-align: center;
+}
+h3 {
+  font-size: 1.728em;
+  line-height: 1.222em;
+  letter-spacing: 0.0625em;
+}
+h3 {
+  font-size: 1.44em;
+  line-height: 1.222em;
+  letter-spacing: 0.0625em;
+}
+p {
+  padding-bottom: 0.6111em;
+}
+li {
+  padding-bottom: 0.6111em; /*half gridline*/
+  padding-top: 0.6111em;
+  list-style-type: square;
+}
+ul {
+  margin-top: -0.666em;
+  margin-bottom: -0.666em;
+}
+footer {
+  font-size: 0.666em;
+  text-align: center;
+}
+
+.imgContainer {
+  text-align: center;
+  background-color: #41C47D;
+  margin-left: -3em;
+  margin-right: -3em;
+}
+.img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 18.75em;
+  padding: 1em 1em 1em 0;
+}
+#bmi {
+  text-align: center;
+  padding-bottom: -1em;
+  margin-bottom: -1em;
+}
+#bmi-submit {
+  width: 10em;
+}
