@@ -22,10 +22,9 @@ $.noConflict();
           );
       });  
 
-        var string= ‘Your Bmi: ‘ '+value+' ‘. Your status:’ '+status+' ‘. Your risk:’ '+risk +' ‘.’;
-        $(‘#results’).text(string);
-        var string= 'Your Bmi: ' +value+ '. Your status:' +status+ '. Your risk:' +risk + '.';
+        var string= 'Your Bmi:' +value+ '. Your status:' +status+ '. Your risk:' +risk + '.';
         $('#results').text(string);
+       
 
 
     });
