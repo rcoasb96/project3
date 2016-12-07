@@ -7,9 +7,10 @@ $.noConflict();
       var weight = $('#bmi-weight').val();
       var height = $('#bmi-height').val();
       
-      $.get(
-          'https://bmi.p.mashape.com/WyFUMDOkdrmshARoxfXDWLZmMeccp180tJEjsnCz3MCFuXJdEo' + '+weight+' 
-          + '+height+',
+      var url= 'https://bmi.p.mashape.com/WyFUMDOkdrmshARoxfXDWLZmMeccp180tJEjsnCz3MCFuXJdEo' +weight+,+height+';
+          
+      $.get(url).done(
+        
           function(data,json){
             $('#bmi').append(
             '<p>Your BMI is: '+data.bmi.value+'</p>'
