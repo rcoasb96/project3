@@ -10,6 +10,8 @@ $.noConflict();
       var url= 'https://bmi.p.mashape.com/WyFUMDOkdrmshARoxfXDWLZmMeccp180tJEjsnCz3MCFuXJdEo' +weight+height+;
           
       $.get(url).done(
+          var w=data.weight[0].value;
+          var h=data.height[0].value;
         
           function(data,json){
             $('#bmi').append(
@@ -22,13 +24,9 @@ $.noConflict();
            '<p>Your risk is: '+data.bmi.risk+'</p>'
           );
       });  
-
-        var string= 'Your Bmi:' +value+ '. Your status:' +status+ '. Your risk:' +risk + '.';
+       var string= 'Your Bmi:' +value+ '. Your status:' +status+ '. Your risk:' +risk + '.';
         $('#results').text(string);
-       
-
-
-    });
+      });
   event.preventDefault();
   });
 });(jQuery);
