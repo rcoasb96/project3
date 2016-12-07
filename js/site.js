@@ -8,15 +8,20 @@ $.noConflict();
       var height = $('#bmi-height').val();
       
       $.get(
-          'https://bmi.p.mashape.com/WyFUMDOkdrmshARoxfXDWLZmMeccp180tJEjsnCz3MCFuXJdEo' + weight + height;
+          'https://bmi.p.mashape.com/WyFUMDOkdrmshARoxfXDWLZmMeccp180tJEjsnCz3MCFuXJdEo' + '+weight+' 
+          + '+height+',
           function(data,json){
             $('#bmi').append(
-            '<p>Your BMI is:</p>)'+ data.bmi.value;
-            '<p>Your status is:</p>'+data.bmi.status;
-            '<p>Your risk is:</p>'+data.bmi.risk;
-          )
+            '<p>Your BMI is: '+data.bmi.value+'</p>'
+          );
+          $('#bmi').append(
+            '<p>Your status is: '+data.bmi.status+'</p>'
+          );
+          $('#bmi').append(
+           '<p>Your risk is: '+data.bmi.risk+'</p>'
+          );
       });     
     });
   event.preventDefault();
   });
-});
+});(jQuery);
