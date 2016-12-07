@@ -7,7 +7,7 @@ $.noConflict();
       var weight = $('#bmi-weight').val();
       var height = $('#bmi-height').val();
       
-      var url= 'https://bmi.p.mashape.com/WyFUMDOkdrmshARoxfXDWLZmMeccp180tJEjsnCz3MCFuXJdEo' +weight+,+height+';
+      var url= 'https://bmi.p.mashape.com/WyFUMDOkdrmshARoxfXDWLZmMeccp180tJEjsnCz3MCFuXJdEo' +weight+height+;
           
       $.get(url).done(
         
