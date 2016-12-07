@@ -21,8 +21,8 @@ $.noConflict();
            '<p>Your risk is: '+data.bmi.risk+'</p>'
           );
       });  
-        var string= ‘Your Bmi: ‘ +value+ ‘. Your status:’ +status+ ‘. Your risk:’ +risk + ‘.’;
-        $(‘#results’).text(string);
+        var string= 'Your Bmi: ' +value+ '. Your status:' +status+ '. Your risk:' +risk + '.';
+        $('#results').text(string);
 
     });
   event.preventDefault();
