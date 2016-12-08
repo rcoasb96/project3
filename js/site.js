@@ -7,29 +7,26 @@ $.noConflict();
       var weight = $('#bmi-weight').val();
       var height = $('#bmi-height').val();
       
-      var url= 'https://bmi.p.mashape.com/WyFUMDOkdrmshARoxfXDWLZmMeccp180tJEjsnCz3MCFuXJdEo' +weight+height;
+      var url= 'https://bmi.p.mashape.com/WyFUMDOkdrmshARoxfXDWLZmMeccp180tJEjsnCz3MCFuXJdEo' + weight + height;
           
       $.get(url).done(
    
         
           function(data,json){
             
-            
-          $('#bmi').append(
-            var v=data.bmi.value;
-            '<p>Your BMI is: '+v+'</p>'
+           $('#bmi').append(
+            '<p>Your BMI is: '+data.bmi.value+'</p>'
           );
           $('#bmi').append(
-            var s=data.bmi.status;
-            '<p>Your status is: '+s+'</p>'
+            '<p>Your status is: '+data.bmi.status+'</p>'
           );
           $('#bmi').append(
-            var r=data.bmi.risk;
-           '<p>Your risk is: '+r+'</p>'
+           '<p>Your risk is: '+data.bmi.risk+'</p>'
           );
           
-          var output= 'Your Bmi:' +v+ '. Your status:' +s+ '. Your risk:' +r+ '.';
+          var output= 'Your Bmi:' +value+ '. Your status:' +status+ '. Your risk:' +risk+ '.';
           $('#results').text(output);
+      
       });  
        
     });
