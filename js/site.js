@@ -15,18 +15,13 @@ $.noConflict();
           function(data,json){
             
             
-          $('#bmi').append(
+          
             var v=data.bmi.value;
-            '<p>Your BMI is: '+v+'</p>'
-          );
-          $('#bmi').append(
+     
             var s=data.bmi.status;
-            '<p>Your status is: '+s+'</p>'
-          );
-          $('#bmi').append(
+            
             var r=data.bmi.risk;
-           '<p>Your risk is: '+r+'</p>'
-          );
+      
           
           var output= 'Your Bmi:' +v+ '. Your status:' +s+ '. Your risk:' +r+ '.';
           $('#results').text(output);
