@@ -28,11 +28,11 @@ $.noConflict();
            '<p>Your risk is: '+r+'</p>'
           );
           
-          var string= 'Your Bmi:' +v+ '. Your status:' +s+ '. Your risk:' +r+ '.';
-        $('#results').text(string);
+          var output= 'Your Bmi:' +v+ '. Your status:' +s+ '. Your risk:' +r+ '.';
+          $('#results').text(output);
       });  
        
-      });
+    });
   event.preventDefault();
   });
 });(jQuery);
